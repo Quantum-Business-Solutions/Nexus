@@ -1,0 +1,112 @@
+/* ==========================================================================
+   Nexus · polish layer
+   Design tokens + the atmospheric and interaction work that inline styles
+   don't cover. Motion lives in nx-polish.js because inline styles outrank
+   any stylesheet — JS sets element.style directly, so it wins.
+   ========================================================================== */
+
+:root{
+  /* palette */
+  --nx-lime:#8ABB2A;   --nx-lime-hi:#a8d84a;  --nx-lime-hot:#d9f28f;
+  --nx-green:#248332;  --nx-green-dk:#0e6b2a;
+  --nx-ink:#13211A;    --nx-ink-2:#1c3326;    --nx-night:#0e1a13;
+  --nx-body:#4a5751;   --nx-mute:#8a938c;     --nx-line:#e4e8e0;
+  --nx-paper:#fbfaf5;  --nx-wash:#f7f9f4;
+
+  /* one type scale (1.25 major third), replacing four near-miss clamps */
+  --nx-t-hero:clamp(38px,5.2vw,68px);
+  --nx-t-h1:clamp(32px,4.2vw,54px);
+  --nx-t-h2:clamp(26px,3.2vw,42px);
+  --nx-t-h3:clamp(20px,2.2vw,26px);
+  --nx-t-lead:clamp(17px,1.5vw,20px);
+
+  /* one spacing rhythm, replacing 84/76/70/80/64/44 */
+  --nx-s-section:clamp(72px,9vw,128px);
+  --nx-s-block:clamp(28px,4vw,48px);
+
+  /* layered shadows — depth without hard borders */
+  --nx-sh-1:0 1px 2px rgba(19,33,26,.06), 0 4px 12px -4px rgba(19,33,26,.10);
+  --nx-sh-2:0 2px 4px rgba(19,33,26,.05), 0 14px 32px -12px rgba(19,33,26,.16);
+  --nx-sh-3:0 4px 8px rgba(19,33,26,.06), 0 34px 70px -28px rgba(19,33,26,.28);
+  --nx-sh-glow:0 0 0 1px rgba(138,187,42,.25), 0 20px 60px -24px rgba(138,187,42,.35);
+}
+
+/* ── film grain: the cheapest "this was art-directed" signal there is ───────── */
+body::after{
+  content:"";position:fixed;inset:0;z-index:9999;pointer-events:none;
+  opacity:.035;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.82' numOctaves='3'/%3E%3C/filter%3E%3Crect width='140' height='140' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* ── motion defaults. inline styles rarely set transition, so these land ───── */
+a, button, summary,
+[class*="nx-card"], [class*="nx-cta"]{
+  transition:transform .34s cubic-bezier(.2,.7,.3,1),
+             box-shadow .34s cubic-bezier(.2,.7,.3,1),
+             opacity .28s ease, color .2s ease, border-color .28s ease,
+             filter .24s ease, background-color .24s ease;
+}
+
+/* links get a real underline animation instead of a colour flip */
+.nx-ul{position:relative}
+.nx-ul::after{
+  content:"";position:absolute;left:0;bottom:-3px;height:1.5px;width:100%;
+  background:currentColor;transform:scaleX(0);transform-origin:left;
+  transition:transform .38s cubic-bezier(.2,.7,.3,1);
+}
+.nx-ul:hover::after{transform:scaleX(1)}
+
+/* ── reveal-on-scroll. js flips data-nx-in to "1" ─────────────────────────── */
+[data-nx-rise]{
+  opacity:0;transform:translate3d(0,26px,0);
+  transition:opacity .78s cubic-bezier(.2,.7,.3,1),
+             transform .78s cubic-bezier(.2,.7,.3,1);
+  will-change:opacity,transform;
+}
+[data-nx-rise][data-nx-in="1"]{opacity:1;transform:none}
+
+/* ── numbers as a design element, not body copy ───────────────────────────── */
+.nx-stat{
+  font-family:'Space Grotesk',sans-serif;font-weight:600;
+  font-size:clamp(46px,6.5vw,86px);line-height:.92;letter-spacing:-.035em;
+  background:linear-gradient(180deg,var(--nx-lime-hi),var(--nx-green));
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  font-variant-numeric:tabular-nums;
+}
+.nx-stat-label{
+  font-size:13px;letter-spacing:.13em;text-transform:uppercase;
+  color:var(--nx-mute);font-weight:600;margin-top:10px;
+}
+
+/* ── photography treatment so real photos stop fighting the palette ───────── */
+.nx-photo{position:relative;overflow:hidden;isolation:isolate}
+.nx-photo>img{display:block;width:100%;height:100%;object-fit:cover;
+  transition:transform .9s cubic-bezier(.2,.7,.3,1);filter:saturate(.88) contrast(1.04)}
+.nx-photo:hover>img{transform:scale(1.045)}
+.nx-photo::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:linear-gradient(160deg,rgba(36,131,50,.20),transparent 42%),
+             linear-gradient(0deg,rgba(14,26,19,.62),transparent 62%);
+}
+
+/* ── glass panel, for overlaying dark imagery ─────────────────────────────── */
+.nx-glass{
+  background:rgba(255,255,255,.055);
+  backdrop-filter:blur(16px) saturate(1.25);
+  -webkit-backdrop-filter:blur(16px) saturate(1.25);
+  border:1px solid rgba(255,255,255,.11);
+}
+
+/* ── visible focus, since none of the inline styles handle it ─────────────── */
+a:focus-visible, button:focus-visible, summary:focus-visible{
+  outline:2px solid var(--nx-lime);outline-offset:3px;border-radius:6px;
+}
+
+/* ── respect the OS setting. non-negotiable. ──────────────────────────────── */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.01ms !important;animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;scroll-behavior:auto !important;
+  }
+  [data-nx-rise]{opacity:1 !important;transform:none !important}
+}

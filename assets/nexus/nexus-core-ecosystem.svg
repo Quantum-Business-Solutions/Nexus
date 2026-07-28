@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" role="img" aria-labelledby="ttl dsc">
+  <title id="ttl">Nexus at the core</title>
+  <desc id="dsc">An isometric core representing Nexus, with the eight services it connects orbiting around it — one partner, every system.</desc>
+
+  <defs>
+    <linearGradient id="coreTop" x1="0" y1="0" x2="0.6" y2="1">
+      <stop offset="0" stop-color="#a8d84a"/><stop offset="1" stop-color="#248332"/>
+    </linearGradient>
+    <linearGradient id="coreSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1c5f27"/><stop offset="1" stop-color="#0c2a15"/>
+    </linearGradient>
+    <linearGradient id="pTop" x1="0" y1="0" x2="0.7" y2="1">
+      <stop offset="0" stop-color="#1a3324"/><stop offset="1" stop-color="#0f2317"/>
+    </linearGradient>
+    <linearGradient id="pSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12291a"/><stop offset="1" stop-color="#0a1a10"/>
+    </linearGradient>
+    <filter id="glow" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="14" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <!-- one reusable isometric service plate, centred on its own origin -->
+    <symbol id="plate" overflow="visible">
+      <path d="M0,-42 L84,0 L0,42 L-84,0 Z" fill="url(#pTop)" stroke="#3f7f3a" stroke-width="1.4"/>
+      <path d="M-84,0 L0,42 L0,55 L-84,13 Z" fill="url(#pSide)" stroke="#2c5f2c" stroke-width="1"/>
+      <path d="M84,0 L0,42 L0,55 L84,13 Z" fill="url(#pSide)" stroke="#2c5f2c" stroke-width="1" opacity=".82"/>
+      <path d="M0,-42 L84,0 L0,42 L-84,0 Z" fill="none" stroke="#8ABB2A" stroke-width="1" opacity=".35"/>
+    </symbol>
+  </defs>
+
+  <!-- ── links: drawn first so plates and core sit on top ── -->
+  <g stroke="#8ABB2A" stroke-width="1.6" fill="none" opacity=".45">
+    <path d="M500,330 L500,150"/><path d="M500,330 L726,197"/>
+    <path d="M500,330 L820,310"/><path d="M500,330 L726,423"/>
+    <path d="M500,330 L500,470"/><path d="M500,330 L274,423"/>
+    <path d="M500,330 L180,310"/><path d="M500,330 L274,197"/>
+  </g>
+  <!-- signal pulses travelling out from the core -->
+  <g fill="#d9f28f">
+    <circle r="3.4"><animateMotion path="M500,330 L500,150" dur="2.6s" repeatCount="indefinite"/></circle>
+    <circle r="3.4"><animateMotion path="M500,330 L820,310" dur="2.6s" begin="0.5s" repeatCount="indefinite"/></circle>
+    <circle r="3.4"><animateMotion path="M500,330 L500,470" dur="2.6s" begin="1.0s" repeatCount="indefinite"/></circle>
+    <circle r="3.4"><animateMotion path="M500,330 L180,310" dur="2.6s" begin="1.5s" repeatCount="indefinite"/></circle>
+    <circle r="3.4"><animateMotion path="M500,330 L726,197" dur="2.6s" begin="0.8s" repeatCount="indefinite"/></circle>
+    <circle r="3.4"><animateMotion path="M500,330 L274,423" dur="2.6s" begin="1.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g font-family="'Space Grotesk', system-ui, sans-serif" font-size="15" font-weight="600" fill="#eaf1e0" text-anchor="middle">
+
+    <!-- ── back row: painted first, labels sit above the plates ── -->
+    <use href="#plate" x="500" y="150"/><text x="500" y="96">Networking</text>
+    <use href="#plate" x="274" y="197"/><text x="274" y="143">Cybersecurity</text>
+    <use href="#plate" x="726" y="197"/><text x="726" y="143">Managed IT</text>
+    <use href="#plate" x="180" y="310"/><text x="180" y="256">Structured Cabling</text>
+    <use href="#plate" x="820" y="310"/><text x="820" y="256">Meeting Spaces</text>
+
+    <!-- ── the core ── -->
+    <g filter="url(#glow)">
+      <path d="M380,352 L500,412 L500,432 L380,372 Z" fill="url(#coreSide)"/>
+      <path d="M620,352 L500,412 L500,432 L620,372 Z" fill="url(#coreSide)" opacity=".85"/>
+      <path d="M500,292 L620,352 L500,412 L380,352 Z" fill="url(#coreTop)"/>
+      <path d="M500,292 L620,352 L500,412 L380,352 Z" fill="none" stroke="#d9f28f" stroke-width="1.6" opacity=".9"/>
+    </g>
+    <text x="500" y="360" font-size="27" font-weight="700" fill="#0d1712" letter-spacing="-0.6">nexus</text>
+    <text x="500" y="276" font-size="12" font-weight="600" fill="#8ABB2A" letter-spacing="2.4">ONE PARTNER</text>
+
+    <!-- ── front row: painted last, labels sit below the plates ── -->
+    <use href="#plate" x="274" y="423"/><text x="274" y="500">Building Audio</text>
+    <use href="#plate" x="726" y="423"/><text x="726" y="500">Digital Signage</text>
+    <use href="#plate" x="500" y="470"/><text x="500" y="547">Cellular</text>
+
+    <text x="500" y="616" font-size="14" fill="#8ABB2A" letter-spacing="1.4" opacity=".85">
+      Everything connected. Nothing dropped.
+    </text>
+  </g>
+</svg>

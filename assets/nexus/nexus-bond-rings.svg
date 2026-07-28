@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 160" role="img" aria-labelledby="t d">
+  <title id="t">The Bond</title>
+  <desc id="d">Two rings interlocked — Nexus and the client, genuinely linked rather than merely adjacent.</desc>
+  <defs>
+    <linearGradient id="gA" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#8ABB2A"/>
+      <stop offset="1" stop-color="#248332"/>
+    </linearGradient>
+    <linearGradient id="gB" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#248332"/>
+      <stop offset="1" stop-color="#8ABB2A"/>
+    </linearGradient>
+
+    <!-- Masks create a TRUE interlock: each ring is hidden only where the other passes over it.
+         Mask-based (not background-coloured casing) so it sits on any background. -->
+    <mask id="underA" maskUnits="userSpaceOnUse" x="0" y="0" width="260" height="160">
+      <rect width="260" height="160" fill="#fff"/>
+      <circle cx="103" cy="46" r="13" fill="#000"/>
+    </mask>
+    <mask id="underB" maskUnits="userSpaceOnUse" x="0" y="0" width="260" height="160">
+      <rect width="260" height="160" fill="#fff"/>
+      <circle cx="157" cy="114" r="13" fill="#000"/>
+    </mask>
+  </defs>
+
+  <g fill="none" stroke-linecap="round">
+    <!-- ring A: Nexus -->
+    <circle cx="100" cy="80" r="46" stroke="url(#gA)" stroke-width="9" mask="url(#underB)"/>
+    <!-- ring B: the client -->
+    <circle cx="160" cy="80" r="46" stroke="url(#gB)" stroke-width="9" mask="url(#underA)"/>
+
+    <!-- signal travelling the bond — "always on, nothing dropped" -->
+    <circle cx="100" cy="80" r="46" stroke="#d9f28f" stroke-width="2.5" stroke-dasharray="6 283" opacity=".95">
+      <animate attributeName="stroke-dashoffset" from="289" to="0" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="80" r="46" stroke="#d9f28f" stroke-width="2.5" stroke-dasharray="6 283" opacity=".95">
+      <animate attributeName="stroke-dashoffset" from="0" to="289" dur="4.2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- the two points where they actually meet -->
+  <circle cx="130" cy="45.5" r="3.6" fill="#8ABB2A"/>
+  <circle cx="130" cy="114.5" r="3.6" fill="#8ABB2A"/>
+</svg>

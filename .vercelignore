@@ -1,0 +1,10 @@
+# Internal-only — must never be served on the public site
+CALL-NOTES-2026-07-21.md
+.github
+
+# scratch/test harnesses kept in-repo for the design team, not for visitors
+_ringtest.html
+_sectionmock.html
+
+# unused alternate render (variant A); variant B is the chosen hero
+assets/nexus/nexus-core-render-alt.png

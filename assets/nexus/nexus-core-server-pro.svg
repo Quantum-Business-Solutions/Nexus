@@ -1,0 +1,217 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" role="img" aria-labelledby="t d">
+  <title id="t">The Nexus core</title>
+  <desc id="d">A dimensional Nexus server core, lit from the upper left, with the eight services it runs hovering around it on live links.</desc>
+
+  <defs>
+    <!-- ══ materials. light comes from upper-left, so left faces are lit and right faces fall away ══ -->
+    <linearGradient id="mTop" x1="0" y1="0" x2=".85" y2="1">
+      <stop offset="0"   stop-color="#3a5a42"/>
+      <stop offset=".38" stop-color="#223b29"/>
+      <stop offset="1"   stop-color="#16281c"/>
+    </linearGradient>
+    <linearGradient id="mLeft" x1="0" y1="0" x2=".2" y2="1">
+      <stop offset="0"   stop-color="#2c4a34"/>
+      <stop offset=".55" stop-color="#182e1f"/>
+      <stop offset="1"   stop-color="#0c1a11"/>
+    </linearGradient>
+    <linearGradient id="mRight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0"   stop-color="#152a1b"/>
+      <stop offset=".6"  stop-color="#0c1a11"/>
+      <stop offset="1"   stop-color="#060d08"/>
+    </linearGradient>
+    <linearGradient id="mPlinth" x1="0" y1="0" x2=".3" y2="1">
+      <stop offset="0" stop-color="#24402b"/><stop offset="1" stop-color="#0a150d"/>
+    </linearGradient>
+    <!-- brushed sheen sweeping across the top face -->
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2=".5">
+      <stop offset="0"   stop-color="#cfefa0" stop-opacity="0"/>
+      <stop offset=".42" stop-color="#cfefa0" stop-opacity=".16"/>
+      <stop offset=".55" stop-color="#cfefa0" stop-opacity=".03"/>
+      <stop offset="1"   stop-color="#cfefa0" stop-opacity="0"/>
+    </linearGradient>
+    <!-- glass service tile -->
+    <linearGradient id="glassTop" x1="0" y1="0" x2=".8" y2="1">
+      <stop offset="0"   stop-color="#2b4a35" stop-opacity=".95"/>
+      <stop offset=".5"  stop-color="#162c1e" stop-opacity=".95"/>
+      <stop offset="1"   stop-color="#0e1f15" stop-opacity=".95"/>
+    </linearGradient>
+    <linearGradient id="glassEdge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#a8d84a" stop-opacity=".85"/>
+      <stop offset=".5" stop-color="#4d8a3c" stop-opacity=".35"/>
+      <stop offset="1" stop-color="#a8d84a" stop-opacity=".6"/>
+    </linearGradient>
+    <linearGradient id="tileSide" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#16301f"/><stop offset="1" stop-color="#070f09"/>
+    </linearGradient>
+    <radialGradient id="floorGlow">
+      <stop offset="0" stop-color="#8ABB2A" stop-opacity=".22"/>
+      <stop offset=".55" stop-color="#8ABB2A" stop-opacity=".07"/>
+      <stop offset="1" stop-color="#8ABB2A" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="contact">
+      <stop offset="0" stop-color="#000" stop-opacity=".62"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vign">
+      <stop offset=".55" stop-color="#0e1a13" stop-opacity="0"/>
+      <stop offset="1"   stop-color="#050b07" stop-opacity=".9"/>
+    </radialGradient>
+
+    <filter id="cast" x="-80%" y="-80%" width="260%" height="260%">
+      <feDropShadow dx="10" dy="20" stdDeviation="18" flood-color="#000" flood-opacity=".55"/>
+    </filter>
+    <filter id="emit" x="-300%" y="-300%" width="700%" height="700%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="haze" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <!-- depth of field for the back row -->
+    <filter id="dof" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="1.1"/>
+    </filter>
+
+    <!-- ══ a glass service tile: contact shadow, body, bevel, sheen ══ -->
+    <symbol id="tile" overflow="visible">
+      <ellipse cx="6" cy="52" rx="74" ry="18" fill="url(#contact)"/>
+      <path d="M-78,12 L0,51 L0,63 L-78,24 Z" fill="url(#tileSide)"/>
+      <path d="M78,12 L0,51 L0,63 L78,24 Z" fill="url(#tileSide)" opacity=".72"/>
+      <path d="M0,-39 L78,12 L0,51 L-78,12 Z" fill="url(#glassTop)"/>
+      <path d="M0,-39 L78,12 L0,51 L-78,12 Z" fill="url(#sheen)"/>
+      <path d="M0,-39 L78,12 L0,51 L-78,12 Z" fill="none" stroke="url(#glassEdge)" stroke-width="1.5"/>
+      <path d="M-78,12 L0,-39 L78,12" fill="none" stroke="#d9f28f" stroke-width="1" opacity=".5"/>
+    </symbol>
+
+    <!-- ══ one rack unit: lit left face, shadowed right face, vents, bevel ══ -->
+    <symbol id="unit" overflow="visible">
+      <path d="M-105,0 L0,52 L0,92 L-105,40 Z" fill="url(#mLeft)"/>
+      <path d="M105,0 L0,52 L0,92 L105,40 Z" fill="url(#mRight)"/>
+      <path d="M0,-52 L105,0 L0,52 L-105,0 Z" fill="url(#mTop)"/>
+      <path d="M0,-52 L105,0 L0,52 L-105,0 Z" fill="url(#sheen)"/>
+      <!-- machined vent slots on the shadowed face -->
+      <g stroke="#39663f" stroke-width="1.1" opacity=".5">
+        <path d="M84,20 L26,49"/><path d="M84,28 L26,57"/><path d="M84,36 L26,65"/><path d="M84,44 L26,73"/>
+      </g>
+      <!-- chamfer highlights: catch the light on the two upper edges -->
+      <path d="M-105,0 L0,-52 L105,0" fill="none" stroke="#7fae52" stroke-width="1.6" opacity=".75"/>
+      <path d="M-105,0 L0,52" fill="none" stroke="#6b9a48" stroke-width="1.3" opacity=".55"/>
+      <path d="M-105,0 L-105,40" fill="none" stroke="#5f8c41" stroke-width="1.1" opacity=".45"/>
+      <!-- ambient occlusion where the unit meets the one below -->
+      <path d="M-105,40 L0,92 L105,40" fill="none" stroke="#000" stroke-width="2.4" opacity=".45"/>
+    </symbol>
+  </defs>
+
+  <!-- ══ environment ══ -->
+  <rect width="1200" height="840" fill="#0e1a13"/>
+  <ellipse cx="600" cy="470" rx="520" ry="300" fill="url(#floorGlow)"/>
+  <!-- receding floor lines -->
+  <g stroke="#8ABB2A" stroke-width="1" opacity=".07">
+    <path d="M600,470 L60,700"/><path d="M600,470 L1140,700"/>
+    <path d="M600,470 L250,780"/><path d="M600,470 L950,780"/>
+    <ellipse cx="600" cy="470" rx="250" ry="125" fill="none"/>
+    <ellipse cx="600" cy="470" rx="390" ry="195" fill="none"/>
+    <ellipse cx="600" cy="470" rx="520" ry="260" fill="none"/>
+  </g>
+
+  <!-- ══ links + live traffic ══ -->
+  <g stroke="#8ABB2A" stroke-width="1.5" fill="none" opacity=".34">
+    <path d="M600,430 L600,235"/><path d="M600,430 L876,292"/><path d="M600,430 L990,430"/>
+    <path d="M600,430 L876,568"/><path d="M600,430 L600,625"/><path d="M600,430 L324,568"/>
+    <path d="M600,430 L210,430"/><path d="M600,430 L324,292"/>
+  </g>
+  <g fill="#eaffb0" filter="url(#emit)">
+    <circle r="3"><animateMotion path="M600,430 L600,235" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M990,430 L600,430" dur="2.9s" begin=".4s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M600,430 L600,625" dur="2.5s" begin=".9s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M210,430 L600,430" dur="2.9s" begin="1.4s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M600,430 L876,292" dur="2.7s" begin=".7s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M324,568 L600,430" dur="2.7s" begin="1.9s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M600,430 L876,568" dur="2.7s" begin="2.2s" repeatCount="indefinite"/></circle>
+    <circle r="3"><animateMotion path="M324,292 L600,430" dur="2.7s" begin="1.1s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <g font-family="'Space Grotesk', system-ui, sans-serif" font-size="15.5" font-weight="600" fill="#e6f0d8" text-anchor="middle">
+
+    <!-- ══ back row — softened by depth of field ══ -->
+    <g filter="url(#dof)" opacity=".93">
+      <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.4s" repeatCount="indefinite"/>
+        <use href="#tile" x="600" y="235"/><text x="600" y="177">Networking</text></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.7s" begin=".6s" repeatCount="indefinite"/>
+        <use href="#tile" x="324" y="292"/><text x="324" y="234">Cybersecurity</text></g>
+      <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.9s" begin="1.2s" repeatCount="indefinite"/>
+        <use href="#tile" x="876" y="292"/><text x="876" y="234">Managed IT</text></g>
+    </g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.1s" begin="1.7s" repeatCount="indefinite"/>
+      <use href="#tile" x="210" y="430"/><text x="210" y="372">Structured Cabling</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.6s" begin=".3s" repeatCount="indefinite"/>
+      <use href="#tile" x="990" y="430"/><text x="990" y="372">Meeting Spaces</text></g>
+
+    <!-- ══════ THE CORE ══════ -->
+    <ellipse cx="600" cy="500" rx="215" ry="66" fill="#8ABB2A" filter="url(#haze)" opacity=".2">
+      <animate attributeName="opacity" values=".13;.3;.13" dur="4s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="612" cy="540" rx="200" ry="46" fill="url(#contact)"/>
+
+    <g filter="url(#cast)">
+      <!-- plinth -->
+      <path d="M-125,0 L0,62 L0,80 L-125,18 Z" transform="translate(600,510)" fill="#0a150d"/>
+      <path d="M125,0 L0,62 L0,80 L125,18 Z"  transform="translate(600,510)" fill="#060c07"/>
+      <path d="M0,-62 L125,0 L0,62 L-125,0 Z" transform="translate(600,510)" fill="url(#mPlinth)"/>
+      <path d="M-125,0 L0,-62 L125,0" transform="translate(600,510)" fill="none" stroke="#6b9a48" stroke-width="1.4" opacity=".6"/>
+
+      <use href="#unit" x="600" y="470"/>
+      <use href="#unit" x="600" y="430"/>
+      <use href="#unit" x="600" y="390"/>
+
+      <!-- emissive light bar along the front chamfer -->
+      <g filter="url(#emit)">
+        <path d="M576,494 L600,506" stroke="#d9f28f" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+        <path d="M576,454 L600,466" stroke="#d9f28f" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+        <path d="M576,414 L600,426" stroke="#d9f28f" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+      </g>
+
+      <!-- status LEDs, each on its own beat -->
+      <g filter="url(#emit)" fill="#8ABB2A">
+        <circle cx="-64" cy="24" r="3.2" transform="translate(600,470)"><animate attributeName="opacity" values="1;.12;1" dur="1.3s" repeatCount="indefinite"/></circle>
+        <circle cx="-46" cy="33" r="3.2" transform="translate(600,470)" fill="#eaffb0"><animate attributeName="opacity" values=".15;1;.15" dur="2.1s" repeatCount="indefinite"/></circle>
+        <circle cx="-64" cy="24" r="3.2" transform="translate(600,430)"><animate attributeName="opacity" values=".2;1;.2" dur="1.7s" repeatCount="indefinite"/></circle>
+        <circle cx="-46" cy="33" r="3.2" transform="translate(600,430)" fill="#eaffb0"><animate attributeName="opacity" values="1;.18;1" dur="2.6s" repeatCount="indefinite"/></circle>
+        <circle cx="-64" cy="24" r="3.2" transform="translate(600,390)"><animate attributeName="opacity" values=".25;1;.25" dur="1.1s" repeatCount="indefinite"/></circle>
+        <circle cx="-46" cy="33" r="3.2" transform="translate(600,390)" fill="#eaffb0"><animate attributeName="opacity" values="1;.3;1" dur="1.9s" repeatCount="indefinite"/></circle>
+      </g>
+
+      <!-- recessed fan well on the top face -->
+      <g transform="translate(600,338)">
+        <ellipse rx="54" ry="27" fill="#0a1610"/>
+        <ellipse rx="54" ry="27" fill="none" stroke="#000" stroke-width="3" opacity=".55"/>
+        <ellipse rx="54" ry="27" fill="none" stroke="#7fae52" stroke-width="1.2" opacity=".55"/>
+        <ellipse rx="44" ry="22" fill="#060f09"/>
+        <g transform="scale(1,0.5)">
+          <g fill="none" stroke="#8ABB2A" stroke-width="6" stroke-linecap="round" opacity=".92">
+            <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="1.9s" repeatCount="indefinite"/>
+            <path d="M0,-32 A32,32 0 0,1 28,16"/>
+            <path d="M28,16 A32,32 0 0,1 -28,16" opacity=".5"/>
+            <path d="M-28,16 A32,32 0 0,1 0,-32" opacity=".75"/>
+          </g>
+          <circle r="7" fill="#d9f28f"/>
+        </g>
+        <!-- glass cover catching the light -->
+        <path d="M-40,-8 A44,22 0 0,1 26,-14" fill="none" stroke="#eaffb0" stroke-width="2" opacity=".3"/>
+      </g>
+    </g>
+
+    <text x="600" y="292" font-size="12" font-weight="700" fill="#8ABB2A" letter-spacing="2.6">THE NEXUS CORE</text>
+
+    <!-- ══ front row — sharp, closest to camera ══ -->
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="5.2s" begin=".9s" repeatCount="indefinite"/>
+      <use href="#tile" x="324" y="568"/><text x="324" y="648">Building Audio</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="4.5s" begin="1.5s" repeatCount="indefinite"/>
+      <use href="#tile" x="876" y="568"/><text x="876" y="648">Digital Signage</text></g>
+    <g><animateTransform attributeName="transform" type="translate" values="0 0; 0 -8; 0 0" dur="6.1s" begin=".2s" repeatCount="indefinite"/>
+      <use href="#tile" x="600" y="625"/><text x="600" y="705">Cellular</text></g>
+  </g>
+
+  <!-- vignette last, so the whole frame sits in atmosphere -->
+  <rect width="1200" height="840" fill="url(#vign)" style="pointer-events:none"/>
+</svg>
