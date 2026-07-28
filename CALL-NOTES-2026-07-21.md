@@ -25,7 +25,7 @@ The fix is specificity, not more polish:
 
 ## Edits made in this commit
 **Nexus-Overview.dc.html**
-- Hero eyebrow → "Shaped by our conversation — July 21."; H1 → "One idea, one plan: Nexus is the connection."
+- Hero eyebrow → "Same name. Bigger promise."; H1 → "One idea, one plan: Nexus is the connection."
 - Hero copy rewritten: not-another-MSP / not-PE / roadmap-first / "visuals are a menu, not a verdict."
 - New **"For Mike"** band (id `#for-mike`) directly above the directions: return-not-refresh, market-first, bond-not-transaction, and "you only move on a yes" (staged/low-risk).
 - **Idea A "The Connective"** flagged *"★ Where the room leaned · 7/21"* and its rationale rewritten in their words.
