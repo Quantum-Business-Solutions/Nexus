@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><script src="./support.js"></script></head>
+<body><x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Instrument Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;background:#0e1a13;color:#eaf1e0}
+  a{text-decoration:none}
+  ::selection{background:#8ABB2A;color:#0d1712}
+  .nx-card{border:1px solid rgba(138,187,42,.2);border-radius:22px;background:rgba(255,255,255,.02);overflow:hidden}
+  .nx-stage{padding:clamp(14px,3vw,34px);display:flex;align-items:center;justify-content:center;background:radial-gradient(70% 70% at 50% 40%,rgba(138,187,42,.07),transparent 70%)}
+  .nx-stage img{width:100%;height:auto;display:block}
+  .nx-light{background:#fbfaf5}
+  .eyebrow{font-family:'Space Grotesk',monospace;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#8ABB2A;font-weight:700}
+  h2{font-family:'Space Grotesk',sans-serif;font-weight:600;letter-spacing:-.02em;line-height:1.1}
+  .note{color:rgba(255,255,255,.66);line-height:1.6;font-size:15.5px}
+  .why{background:rgba(138,187,42,.07);border:1px solid rgba(138,187,42,.24);border-radius:14px;padding:16px 20px;font-size:14.5px;color:rgba(255,255,255,.8);line-height:1.6}
+  .why b{color:#a8d84a;font-weight:600}
+  .grid2{display:grid;grid-template-columns:1.35fr 1fr;gap:30px;align-items:center}
+  @media(max-width:900px){.grid2{grid-template-columns:1fr}}
+  .chip{display:inline-block;font-size:12.5px;color:rgba(255,255,255,.72);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.13);padding:5px 12px;border-radius:999px;margin:0 6px 6px 0}
+</style>
+</helmet>
+
+<div style="overflow-x:hidden">
+
+  <header style="max-width:1240px;margin:0 auto;padding:26px 40px;display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <img src="assets/nexus/nexus-logo-reversed.png" alt="Nexus" style="height:32px;display:block">
+    <div class="eyebrow" style="color:rgba(255,255,255,.45)">Nexus · Core graphics</div>
+  </header>
+
+  <div style="max-width:1240px;margin:0 auto;padding:0 40px;font-size:13.5px;color:rgba(255,255,255,.4)">
+    <a href="Nexus-Overview.dc.html" style="color:rgba(255,255,255,.45)">Five directions</a> ›
+    <span style="color:rgba(255,255,255,.72)">Core graphics</span>
+  </div>
+
+  <section style="max-width:900px;margin:0 auto;padding:44px 40px 20px">
+    <div style="font-family:'Fraunces',serif;font-style:italic;font-size:21px;color:#a8d84a;margin-bottom:14px">Everything connected. Nothing dropped.</div>
+    <h1 style="font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.4vw,56px);line-height:1.04;letter-spacing:-.025em;color:#fff;margin-bottom:20px;text-wrap:balance">One core. Every system attached to it.</h1>
+    <p style="font-size:18px;line-height:1.6;color:rgba(255,255,255,.7)">Graphics built to carry one idea: Nexus isn't a vendor beside your business, it's the core of it. Each is hand-drawn vector — a few KB, sharp at any size, animated in the browser with no video and no stock art.</p>
+  </section>
+
+  <!-- 1 · the animated server core -->
+  <section style="max-width:1240px;margin:0 auto;padding:34px 40px">
+    <div class="nx-card">
+      <div style="padding:26px clamp(20px,3vw,34px) 4px">
+        <div class="eyebrow">Concept 01 · hero</div>
+        <h2 style="font-size:clamp(24px,2.8vw,34px);margin:8px 0 10px">The living core</h2>
+        <p class="note" style="max-width:74ch">An isometric Nexus server with the eight services it runs orbiting around it. The fan turns, status lights blink on their own beats, the plates hover, and real traffic runs both directions along every link — so the page feels like a system that's actually on.</p>
+      </div>
+      <div class="nx-stage"><img src="assets/nexus/nexus-core-server.svg" alt="Isometric Nexus server core with eight services orbiting it, animated"></div>
+      <div style="padding:6px clamp(20px,3vw,34px) 26px">
+        <div class="why"><b>Why it matters:</b> this is the one diagram no competitor can draw honestly. A typical MSP owns three of those eight plates — Nexus owns all of them. It answers the fear of being just another MSP by simply showing the footprint.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 · the flat/static core -->
+  <section style="max-width:1240px;margin:0 auto;padding:0 40px 34px">
+    <div class="nx-card">
+      <div style="padding:26px clamp(20px,3vw,34px) 4px">
+        <div class="eyebrow">Concept 02 · quieter alternate</div>
+        <h2 style="font-size:clamp(22px,2.4vw,30px);margin:8px 0 10px">The core, simplified</h2>
+        <p class="note" style="max-width:74ch">Same architecture, calmer execution — a single glowing core plate instead of the server. Better where the graphic supports copy rather than leading the page: a services index, a proposal spread, or a slide.</p>
+      </div>
+      <div class="nx-stage"><img src="assets/nexus/nexus-core-ecosystem.svg" alt="Isometric Nexus core with the eight services around it"></div>
+    </div>
+  </section>
+
+  <!-- 3 · the bond mark, both backgrounds -->
+  <section style="max-width:1240px;margin:0 auto;padding:0 40px 34px">
+    <div class="nx-card">
+      <div style="padding:26px clamp(20px,3vw,34px) 4px">
+        <div class="eyebrow">Concept 03 · the mark</div>
+        <h2 style="font-size:clamp(22px,2.4vw,30px);margin:8px 0 10px">The Bond</h2>
+        <p class="note" style="max-width:74ch">Two rings genuinely interlocked — not overlapping, linked. A signal runs each ring continuously. Built with masks rather than a background-coloured gap, so the interlace is real and holds on dark or light.</p>
+      </div>
+      <div class="grid2" style="padding:20px clamp(20px,3vw,34px) 0">
+        <div class="nx-stage" style="border:1px solid rgba(255,255,255,.09);border-radius:16px">
+          <img src="assets/nexus/nexus-bond-rings.svg" alt="Two interlocking rings on dark" style="max-width:400px;margin:0 auto">
+        </div>
+        <div class="nx-stage nx-light" style="border-radius:16px">
+          <img src="assets/nexus/nexus-bond-rings.svg" alt="Two interlocking rings on light" style="max-width:320px;margin:0 auto">
+        </div>
+      </div>
+      <div style="padding:22px clamp(20px,3vw,34px) 26px">
+        <div class="why" style="margin-bottom:16px"><b>Straight from the call:</b> “It's really a bond. It's a relationship between two parties… a win-win.” — Lin</div>
+        <div>
+          <span class="chip">Section marks</span><span class="chip">Business cards</span><span class="chip">Favicon</span>
+          <span class="chip">Email signature</span><span class="chip">Slide corners</span><span class="chip">Van livery</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:900px;margin:0 auto;padding:20px 40px 90px;text-align:center">
+    <h2 style="font-size:clamp(22px,2.6vw,32px);margin-bottom:14px">Which one leads?</h2>
+    <p class="note" style="max-width:56ch;margin:0 auto 26px">Tell us which of these to build the pages around and it becomes the visual spine of the brand — hero, services, proposal, and collateral.</p>
+    <a href="Nexus-Overview.dc.html" style="display:inline-block;background:linear-gradient(90deg,#8ABB2A,#248332);color:#0d1712;font-weight:600;font-size:15.5px;padding:15px 30px;border-radius:999px">Back to the overview</a>
+  </section>
+
+  <footer style="background:#0b140e;border-top:1px solid rgba(255,255,255,.08)">
+    <div style="max-width:1240px;margin:0 auto;padding:30px 40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:13px;color:rgba(255,255,255,.38)">
+      <span>Nexus · brand + website proposal</span><span>Prepared by Quantum Business Solutions</span>
+    </div>
+  </footer>
+
+</div>
+</x-dc></body></html>
