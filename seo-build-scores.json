@@ -1,0 +1,110 @@
+{
+ "first": "showcase",
+ "summaries": {
+  "showcase": {
+   "count": 21,
+   "avg_score": 90,
+   "grade_a": 19,
+   "grade_b_plus": 21,
+   "grade_d_f": 0,
+   "faq": 21,
+   "service_or_article": 12,
+   "local": 21,
+   "review": 0,
+   "question": 21,
+   "under_300": 3,
+   "city_title": 21,
+   "breadcrumb": 20,
+   "no_alt_pages": 0,
+   "avg_words": 554,
+   "by_type": {
+    "company": {
+     "count": 8,
+     "avg": 85
+    },
+    "city": {
+     "count": 1,
+     "avg": 76
+    },
+    "industry": {
+     "count": 4,
+     "avg": 94
+    },
+    "service": {
+     "count": 8,
+     "avg": 96
+    }
+   }
+  },
+  "clean": {
+   "count": 21,
+   "avg_score": 90,
+   "grade_a": 19,
+   "grade_b_plus": 21,
+   "grade_d_f": 0,
+   "faq": 21,
+   "service_or_article": 12,
+   "local": 21,
+   "review": 0,
+   "question": 21,
+   "under_300": 3,
+   "city_title": 21,
+   "breadcrumb": 20,
+   "no_alt_pages": 0,
+   "avg_words": 534,
+   "by_type": {
+    "company": {
+     "count": 8,
+     "avg": 85
+    },
+    "city": {
+     "count": 1,
+     "avg": 76
+    },
+    "industry": {
+     "count": 4,
+     "avg": 94
+    },
+    "service": {
+     "count": 8,
+     "avg": 96
+    }
+   }
+  },
+  "press": {
+   "count": 21,
+   "avg_score": 90,
+   "grade_a": 19,
+   "grade_b_plus": 21,
+   "grade_d_f": 0,
+   "faq": 21,
+   "service_or_article": 12,
+   "local": 21,
+   "review": 0,
+   "question": 21,
+   "under_300": 3,
+   "city_title": 21,
+   "breadcrumb": 20,
+   "no_alt_pages": 0,
+   "avg_words": 536,
+   "by_type": {
+    "company": {
+     "count": 8,
+     "avg": 85
+    },
+    "city": {
+     "count": 1,
+     "avg": 76
+    },
+    "industry": {
+     "count": 4,
+     "avg": 94
+    },
+    "service": {
+     "count": 8,
+     "avg": 96
+    }
+   }
+  }
+ }
+}

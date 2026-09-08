@@ -5,14 +5,10 @@
   "installCommand": "",
   "outputDirectory": ".",
   "headers": [
-    {
-      "source": "/preview/(.*)",
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    }
+    { "source": "/(.*)", "headers": [ { "key": "X-Robots-Tag", "value": "noindex, nofollow" } ] }
+  ],
+  "redirects": [
+    { "source": "/preview", "destination": "/", "permanent": false },
+    { "source": "/preview/(.*)", "destination": "/$1", "permanent": false }
   ]
 }
