@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Quantum Website Standard</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap">
+<style>
+:root{--ink:#14171c;--ink-2:#4a515c;--line:#e3e0d8;--paper:#faf8f4;--accent:#8a6d2f;--rule:#d8d4ca;--ok:#2f7a45;--card:#ffffff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--ink:#eceef2;--ink-2:#a1a8b4;--line:#282c34;--paper:#0e1116;--accent:#d0b366;--rule:#2f343d;--ok:#6fc48a;--card:#151a22}}
+:root[data-theme="dark"]{--ink:#eceef2;--ink-2:#a1a8b4;--line:#282c34;--paper:#0e1116;--accent:#d0b366;--rule:#2f343d;--ok:#6fc48a;--card:#151a22}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font:16px/1.65 'Inter',system-ui,-apple-system,sans-serif;margin:0}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.eyebrow{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:600;display:flex;align-items:center;gap:14px;margin:0 0 18px}
+.eyebrow::before{content:'';width:26px;height:1px;background:var(--accent)}
+header.top{padding:72px 0 40px;border-bottom:1px solid var(--rule)}
+header.top h1{font-size:clamp(32px,5vw,52px);max-width:20ch}
+header.top .sub{color:var(--ink-2);max-width:62ch;margin:18px 0 0;font-size:17px}
+.meta{font-size:13px;color:var(--ink-2);margin-top:22px;letter-spacing:.02em}
+.items{display:grid;grid-template-columns:1fr;gap:0;padding:20px 0 10px}
+.item{display:grid;grid-template-columns:64px 1fr;gap:22px;padding:30px 0;border-bottom:1px solid var(--line)}
+.item .n{font-family:'Fraunces',Georgia,serif;font-size:34px;color:var(--accent);line-height:1;padding-top:4px}
+.item h2{font-size:clamp(20px,2.4vw,26px);margin-bottom:12px}
+.item ul{margin:0;padding-left:18px}
+.item li{margin:6px 0;color:var(--ink);}
+.item li::marker{color:var(--ok)}
+.check{font-size:12.5px;color:var(--ink-2);margin:12px 0 0;padding-top:10px;border-top:1px dashed var(--line)}
+.check b{color:var(--ink);font-weight:600}
+section.blk{padding:44px 0;border-bottom:1px solid var(--line)}
+section.blk h2{font-size:clamp(22px,2.6vw,28px);margin-bottom:8px}
+section.blk .lead{color:var(--ink-2);margin:0 0 22px;max-width:66ch}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;padding:11px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-2)}
+td:first-child{font-weight:600}
+.not{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px 26px;max-width:66ch}
+.not h3{font-size:18px;margin-bottom:8px}
+footer{padding:36px 0 70px;color:var(--ink-2);font-size:13.5px;max-width:66ch}
+@media(max-width:600px){.item{grid-template-columns:44px 1fr;gap:14px}.item .n{font-size:26px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="top">
+  <p class="eyebrow">Quantum Business Solutions</p>
+  <h1>The Quantum Website Standard</h1>
+  <p class="sub">What every website we build is guaranteed to have on the day it goes live, and how you can check it yourself. Every line below is proved by a check we run, and you receive the evidence, not a summary of it.</p>
+  <p class="meta">Version 1.0 · September 2026 · Applies to every Launch, Growth and Transform build</p>
+</header>
+
+<div class="items">
+
+<div class="item"><div class="n">1</div><div>
+  <h2>It is yours, not ours</h2>
+  <ul>
+    <li>The site names your company in its structured data, titles, footer and social tags. No trace of Quantum, our booking links or our navigation remains anywhere in the code.</li>
+    <li>Your LinkedIn company page and other verified profiles are declared in the site's Organization schema, so search and answer engines resolve your company to the right entity.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> a machine check on every page for any of our brand strings, plus a check that the schema names you and lists your profiles.</p>
+</div></div>
+
+<div class="item"><div class="n">2</div><div>
+  <h2>Every page works on a phone first</h2>
+  <ul>
+    <li>No sideways scrolling at 390px. No text under 13px. Form fields at 16px or larger so iPhones do not zoom on tap.</li>
+    <li>Every tap target at least 24px, with 44px as the goal, and none crowded together.</li>
+    <li>Sticky headers never take more than a quarter of the screen. Navigation reachable by touch on every page.</li>
+    <li>A person opens every page on a real phone before it ships.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> the mobile audit in our gate at 390px, screenshots at three widths, and a signed phone review per page.</p>
+</div></div>
+
+<div class="item"><div class="n">3</div><div>
+  <h2>Readable by everyone</h2>
+  <ul>
+    <li>Text contrast meets WCAG AA (4.5:1) everywhere, including accent text on light backgrounds, which is where most sites fail. Buttons pass on their own colour.</li>
+    <li>One H1 per page, headings in order, alt text on every image, a skip link, visible keyboard focus.</li>
+    <li>Motion respects the visitor's reduced-motion setting.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> axe-core accessibility results at three widths for every page, delivered with the launch.</p>
+</div></div>
+
+<div class="item"><div class="n">4</div><div>
+  <h2>Fast</h2>
+  <ul>
+    <li>Images sized, dimensioned and lazy-loaded below the fold; the hero image prioritised.</li>
+    <li>Font connections pre-established; no layout shift from images or fonts.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> Core Web Vitals measured on the staging site before launch, and the numbers reported.</p>
+</div></div>
+
+<div class="item"><div class="n">5</div><div>
+  <h2>Found</h2>
+  <ul>
+    <li>Every page has a title, meta description, canonical URL, Open Graph image and Twitter card, so links shared in email, LinkedIn and Teams render properly.</li>
+    <li>Structured data is present, valid and correct: Organization and WebSite on the home page, breadcrumbs on inner pages, FAQ and Article markup where the content earns it, and never markup that claims something the page does not show.</li>
+    <li>Every URL that earned traffic on your old site gets a permanent redirect. We list them and test them after launch.</li>
+    <li>An SEO baseline is recorded before we touch anything, so the effect of the work can be measured.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> per-page metadata and schema checks, Google's Rich Results Test on five page types, a tested redirect map, and the baseline report.</p>
+</div></div>
+
+<div class="item"><div class="n">6</div><div>
+  <h2>Converts</h2>
+  <ul>
+    <li>Two ways to act on every page: a hard offer (book, call, request) and a soft one (a download, an assessment, a calculator) for the visitor who is not ready yet.</li>
+    <li>Every form delivers to a named person on your team. We send a test submission through it with you before launch.</li>
+    <li>No broken internal links.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> conversion-path checks per page, a link check per page, and the form test record naming who received it and when.</p>
+</div></div>
+
+<div class="item"><div class="n">7</div><div>
+  <h2>Written like a person</h2>
+  <ul>
+    <li>No placeholder text, no lorem ipsum, no template copy left over from another client.</li>
+    <li>No generic claims. Every headline passes one test: could a competitor truthfully say this? If yes, it does not ship.</li>
+    <li>No em dashes, no filler openers, no stacked adjectives. The copy reads like your best salesperson on a good day, and a person reviews it, not just a model.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> placeholder and em-dash checks in the gate, a copy critic and a fact checker on every page, and a human sign-off.</p>
+</div></div>
+
+<div class="item"><div class="n">8</div><div>
+  <h2>Balanced and finished</h2>
+  <ul>
+    <li>Card grids never leave an orphan: no row of six over a row of two, at any screen width.</li>
+    <li>The blog listing and every blog post match the rest of the site: same theme, same header and footer, same type. Not a default template bolted on.</li>
+    <li>Every image is a real image or a deliberately blank surface. Nothing generated is passed off as a photograph of your people or your premises.</li>
+    <li>Every page scores at least 80 out of 100 on our automated gate, and you receive the score sheet.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> grid balance measured at three widths, and the per-page score line.</p>
+</div></div>
+
+<div class="item"><div class="n">9</div><div>
+  <h2>Editable by your team</h2>
+  <ul>
+    <li>Built on HubSpot's drag-and-drop editor with the theme's own modules, so your team can change copy, images and sections without a developer.</li>
+    <li>A recorded walkthrough of how to edit the site, delivered with the launch.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> the walkthrough recording, and a page you edit yourself during handover.</p>
+</div></div>
+
+<div class="item"><div class="n">10</div><div>
+  <h2>Supported after launch</h2>
+  <ul>
+    <li>Anything on this list found not to hold in the first 30 days after launch is fixed at no charge.</li>
+    <li>At 30, 60 and 90 days you receive a performance read against the baseline: traffic, the pages that earn it, and what we would change next.</li>
+  </ul>
+  <p class="check"><b>How we prove it:</b> the three reads, in your ClientCommand portal, against the day-one baseline.</p>
+</div></div>
+
+</div>
+
+<section class="blk">
+  <h2>What you receive as evidence</h2>
+  <p class="lead">Delivered through your ClientCommand portal at launch, in one folder.</p>
+  <div class="tablewrap"><table>
+    <tr><th>Item</th><th>What it is</th><th>When</th></tr>
+    <tr><td>Gate report</td><td>Every check above, per page, pass or fail, with the score</td><td>Before launch, and after</td></tr>
+    <tr><td>Screenshots</td><td>Every page at 390, 768 and 1440 wide</td><td>Before launch</td></tr>
+    <tr><td>Accessibility report</td><td>axe-core results, three widths, per page</td><td>Before launch</td></tr>
+    <tr><td>Structured data validation</td><td>Rich Results Test and schema.org validator, five page types</td><td>Before launch</td></tr>
+    <tr><td>Redirect map</td><td>Old URL, new URL, tested status code</td><td>At launch</td></tr>
+    <tr><td>Form test record</td><td>Who received the test submission, and when</td><td>Before launch</td></tr>
+    <tr><td>Baseline and 30/60/90 reads</td><td>Organic traffic, keywords, top pages, value</td><td>Day one, then 30, 60, 90</td></tr>
+    <tr><td>Recorded walkthrough</td><td>How to edit the site</td><td>At launch</td></tr>
+  </table></div>
+</section>
+
+<section class="blk">
+  <div class="not">
+    <h3>What this standard does not promise</h3>
+    <p style="margin:0;color:var(--ink-2)">Rankings, traffic growth or lead volume. Those depend on the market, your offer and the content you publish after launch. What we promise is that nothing about the build will be the reason they do not come, and that you can see the proof.</p>
+  </div>
+</section>
+
+<footer>Owner: Shawn Peterson, Quantum Business Solutions. This standard is versioned with our build process and reviewed monthly. If a line here is ever found not to hold on your site, tell us and it becomes our problem, not yours.</footer>
+</div>
+</body>
+</html>
