@@ -939,6 +939,25 @@ html.pv-js [data-dir="showcase"] .pv-lh .fcard.a{animation:pv-up .8s cubic-bezie
 @media(max-width:900px){.pv-story{grid-template-columns:1fr;gap:18px}.pv-story .stage{top:64px;height:42vh;z-index:3}.pv-story .steps{gap:36px;padding:8px 0}.pv-story .step{color:var(--fg)}}
 @media(prefers-reduced-motion:reduce){html.pv-js .pv-rv{opacity:1;transform:none}.pv-stage::before{animation:none}.pv-fleet .dev .img img{animation:none}html.pv-js [data-dir="showcase"] .pv-lh .q-container > div:first-child > *,html.pv-js [data-dir="showcase"] .pv-lh .hero3d,html.pv-js [data-dir="showcase"] .pv-lh .fcard.a{animation:none}.pv-story .step{color:var(--fg)}}
 
+/* ===== history rail (timeline) ===== */
+.pv-tl2{position:relative;margin-top:48px}
+.pv-tl2 .line{position:absolute;left:0;right:0;top:118px;height:2px;background:var(--border);z-index:0}
+.pv-tl2 .line i{position:absolute;inset:0;background:var(--q-gold);transform-origin:left;transform:scaleX(0);transition:transform 1.6s cubic-bezier(.2,.7,.2,1)}
+.pv-tl2.in .line i{transform:scaleX(1)}
+.pv-tl2 ol{list-style:none;margin:0;padding:0 0 12px;display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,320px);gap:28px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;position:relative;z-index:1;-webkit-mask-image:linear-gradient(90deg,#000 92%,transparent);mask-image:linear-gradient(90deg,#000 92%,transparent)}
+.pv-tl2[data-n="1"] ol,.pv-tl2[data-n="2"] ol,.pv-tl2[data-n="3"] ol{grid-auto-flow:row;grid-template-columns:repeat(var(--n,3),minmax(0,1fr));mask-image:none;-webkit-mask-image:none}
+.pv-tl2 li{scroll-snap-align:start;position:relative;padding-top:132px}
+.pv-tl2 li .dot{position:absolute;left:0;top:110px;width:18px;height:18px;border-radius:50%;background:var(--card);border:3px solid var(--q-gold);box-shadow:0 0 0 6px color-mix(in srgb,var(--q-gold) 18%,transparent);z-index:2}
+.pv-tl2 li .y{position:absolute;left:0;top:0;font:800 clamp(44px,4vw,64px)/1 var(--q-serif);letter-spacing:-.04em;color:var(--accent-ink)}
+.pv-tl2 li .img{margin:0 0 14px;border-radius:calc(var(--radius) + 4px);overflow:hidden;aspect-ratio:3/2;background:var(--bg-alt)}.pv-tl2 li .img img{width:100%;height:100%;object-fit:cover;display:block}
+.pv-tl2 li h3{margin:0 0 8px;font-size:19px;line-height:1.25}
+.pv-tl2 li p{margin:0;color:var(--fg-muted);font-size:15px;line-height:1.55}
+.pv-tl2-nav{position:absolute;right:0;top:-64px;display:flex;gap:8px;z-index:3}
+.pv-tl2-nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--border);background:var(--card);color:var(--fg);font-size:18px;cursor:pointer}
+.pv-tl2-nav button:hover{border-color:var(--q-gold);color:var(--accent-ink)}
+@media(max-width:767px){.pv-tl2 .line{left:8px;right:auto;top:0;bottom:0;width:2px;height:auto}.pv-tl2 .line i{transform-origin:top;transform:scaleY(0)}.pv-tl2.in .line i{transform:scaleY(1)}.pv-tl2 ol{grid-auto-flow:row;grid-auto-columns:auto;grid-template-columns:1fr;gap:34px;overflow:visible;mask-image:none;-webkit-mask-image:none;padding-left:40px}.pv-tl2 li{padding-top:0}.pv-tl2 li .dot{left:-40px;top:14px}.pv-tl2 li .y{position:static;font-size:40px;margin-bottom:8px}.pv-tl2-nav{display:none}}
+@media(prefers-reduced-motion:reduce){.pv-tl2 .line i{transition:none;transform:none}}
+
 /* ===== direction system: showcase ===== */
 
 /* Showcase: display grotesque at weight 800, pill buttons, floating cards, image LEFT, bigger stats. */
@@ -1044,7 +1063,7 @@ document.querySelectorAll('.pv-video[data-embed]').forEach(function(v){
 <script>(function(){var d=document.documentElement;d.classList.add('pv-js');var rm=matchMedia('(prefers-reduced-motion: reduce)').matches,fine=matchMedia('(pointer:fine) and (min-width:1025px)').matches,dir=d.getAttribute('data-dir')||'';
 /* reveal below the first section, staggered per parent */
 if(!rm&&'IntersectionObserver' in window){var first=document.querySelector('main > section');
-var sel='main .q-card,main .pv-stat,main .pv-svc a,main .pv-seal .item,main .pv-flow .node,main .pv-fleet .dev,main .pv-hot-list li,main .pv-wheel,main .pv-ba,main .pv-3d,main .pv-cmp,main .pv-story .stage,main .pv-map-svg,main .pv-post,main .pv-quote,main .pv-cs,main .pv-metric,main section .q-h2,main section .q-lead,main .pv-proof b';
+var sel='main .q-card,main .pv-stat,main .pv-svc a,main .pv-seal .item,main .pv-flow .node,main .pv-fleet .dev,main .pv-hot-list li,main .pv-wheel,main .pv-ba,main .pv-3d,main .pv-cmp,main .pv-story .stage,main .pv-map-svg,main .pv-tl2 li,main .pv-post,main .pv-quote,main .pv-cs,main .pv-metric,main section .q-h2,main section .q-lead,main .pv-proof b';
 var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !(first&&first.contains(e))&&!e.closest('.pv-lh')});
 els.forEach(function(e){var p=e.parentElement;p.__pvN=p.__pvN||0;e.style.setProperty('--i',Math.min(p.__pvN,8));p.__pvN++;e.classList.add('pv-rv')});
 var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting||x.boundingClientRect.top<0){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'});
