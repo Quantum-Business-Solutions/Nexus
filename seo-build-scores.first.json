@@ -42,8 +42,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": false,
    "has_video": false,
@@ -139,8 +209,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -238,8 +378,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 36,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -334,8 +544,77 @@
     "PostalAddress",
     "Question",
     "State",
+    "WebPage",
     "WebSite"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": true,
+     "breadcrumb": false,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "yes",
+     "breadcrumb": "no",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "breadcrumb"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 30,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage",
+     "WebSite"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -431,8 +710,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -529,8 +878,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 37,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -625,8 +1045,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 37,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -721,8 +1212,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 37,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -819,8 +1381,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 37,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -914,8 +1547,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1013,8 +1716,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1111,8 +1884,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 37,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1207,8 +2051,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1303,8 +2218,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1399,8 +2385,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 39,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1495,8 +2552,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1591,8 +2719,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1687,8 +2886,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1783,8 +3053,79 @@
     "PostalAddress",
     "Question",
     "Service",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "4",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 41,
+    "ids": 4,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "Service",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1878,8 +3219,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -1975,8 +3386,78 @@
     "Organization",
     "PostalAddress",
     "Question",
-    "State"
+    "State",
+    "WebPage"
    ],
+   "entity": {
+    "score": 93,
+    "grade": "A",
+    "checks": {
+     "org": true,
+     "page_type": true,
+     "primary": true,
+     "website": false,
+     "breadcrumb": true,
+     "person": false,
+     "sameas": true,
+     "provider": true,
+     "area": true,
+     "author": false,
+     "contact": true,
+     "about": true,
+     "dates": true,
+     "ids": true,
+     "resolve": true,
+     "clean": true
+    },
+    "values": {
+     "org": "Organization",
+     "page_type": "WebPage",
+     "primary": "Organization",
+     "website": "no",
+     "breadcrumb": "yes",
+     "person": "no",
+     "sameas": "1 profiles",
+     "provider": "yes",
+     "area": "yes",
+     "author": "no",
+     "contact": "yes",
+     "about": "yes",
+     "dates": "yes",
+     "ids": "3",
+     "resolve": "yes",
+     "clean": "yes"
+    },
+    "failed": [
+     "person"
+    ],
+    "na": [
+     "author",
+     "website"
+    ],
+    "recommendations": [
+     "Name the expert or author as a Person, with a URL that identifies them"
+    ],
+    "nodes": 28,
+    "ids": 3,
+    "dangling": 0,
+    "types": [
+     "Answer",
+     "BreadcrumbList",
+     "City",
+     "ContactPoint",
+     "FAQPage",
+     "GeoCoordinates",
+     "ImageObject",
+     "ListItem",
+     "LocalBusiness",
+     "Organization",
+     "PostalAddress",
+     "Question",
+     "State",
+     "WebPage"
+    ]
+   },
    "noindex": true,
    "has_form": true,
    "has_video": false,
@@ -2049,10 +3530,98 @@
   "breadcrumb": 20,
   "no_alt_pages": 0,
   "avg_words": 554,
+  "entity_avg": 93,
+  "entity_a": 21,
+  "entity_d_f": 0,
+  "entity_checks": {
+   "org": {
+    "pass": 21,
+    "of": 21
+   },
+   "page_type": {
+    "pass": 21,
+    "of": 21
+   },
+   "primary": {
+    "pass": 21,
+    "of": 21
+   },
+   "website": {
+    "pass": 1,
+    "of": 1
+   },
+   "breadcrumb": {
+    "pass": 20,
+    "of": 20
+   },
+   "person": {
+    "pass": 0,
+    "of": 21
+   },
+   "sameas": {
+    "pass": 21,
+    "of": 21
+   },
+   "provider": {
+    "pass": 21,
+    "of": 21
+   },
+   "area": {
+    "pass": 21,
+    "of": 21
+   },
+   "author": {
+    "pass": 0,
+    "of": 0
+   },
+   "contact": {
+    "pass": 21,
+    "of": 21
+   },
+   "about": {
+    "pass": 21,
+    "of": 21
+   },
+   "dates": {
+    "pass": 21,
+    "of": 21
+   },
+   "ids": {
+    "pass": 21,
+    "of": 21
+   },
+   "resolve": {
+    "pass": 21,
+    "of": 21
+   },
+   "clean": {
+    "pass": 21,
+    "of": 21
+   }
+  },
+  "schema_types": {
+   "Organization": 21,
+   "FAQPage": 21,
+   "WebPage": 21,
+   "Answer": 21,
+   "GeoCoordinates": 21,
+   "ContactPoint": 21,
+   "LocalBusiness": 21,
+   "Question": 21,
+   "PostalAddress": 21,
+   "State": 21,
+   "City": 21,
+   "ImageObject": 21,
+   "BreadcrumbList": 20,
+   "ListItem": 20,
+   "Service": 12,
+   "WebSite": 1
+  },
   "by_type": {
    "company": {
     "count": 21,
-    "avg": 90
+    "avg": 90,
+    "entity": 93
    }
   }
  }

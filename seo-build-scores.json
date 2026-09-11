@@ -17,22 +17,113 @@
    "breadcrumb": 20,
    "no_alt_pages": 0,
    "avg_words": 554,
+   "entity_avg": 97,
+   "entity_a": 21,
+   "entity_d_f": 0,
+   "entity_checks": {
+    "org": {
+     "pass": 21,
+     "of": 21
+    },
+    "page_type": {
+     "pass": 21,
+     "of": 21
+    },
+    "primary": {
+     "pass": 21,
+     "of": 21
+    },
+    "website": {
+     "pass": 1,
+     "of": 1
+    },
+    "breadcrumb": {
+     "pass": 20,
+     "of": 20
+    },
+    "person": {
+     "pass": 0,
+     "of": 8
+    },
+    "sameas": {
+     "pass": 21,
+     "of": 21
+    },
+    "provider": {
+     "pass": 21,
+     "of": 21
+    },
+    "area": {
+     "pass": 21,
+     "of": 21
+    },
+    "author": {
+     "pass": 0,
+     "of": 0
+    },
+    "contact": {
+     "pass": 21,
+     "of": 21
+    },
+    "about": {
+     "pass": 21,
+     "of": 21
+    },
+    "dates": {
+     "pass": 21,
+     "of": 21
+    },
+    "ids": {
+     "pass": 21,
+     "of": 21
+    },
+    "resolve": {
+     "pass": 21,
+     "of": 21
+    },
+    "clean": {
+     "pass": 21,
+     "of": 21
+    }
+   },
+   "schema_types": {
+    "WebPage": 21,
+    "ImageObject": 21,
+    "GeoCoordinates": 21,
+    "State": 21,
+    "Question": 21,
+    "Organization": 21,
+    "FAQPage": 21,
+    "PostalAddress": 21,
+    "Answer": 21,
+    "ContactPoint": 21,
+    "City": 21,
+    "LocalBusiness": 21,
+    "BreadcrumbList": 20,
+    "ListItem": 20,
+    "Service": 12,
+    "WebSite": 1
+   },
    "by_type": {
     "company": {
      "count": 8,
-     "avg": 85
+     "avg": 85,
+     "entity": 93
     },
     "city": {
      "count": 1,
-     "avg": 76
+     "avg": 76,
+     "entity": 100
     },
     "industry": {
      "count": 4,
-     "avg": 94
+     "avg": 94,
+     "entity": 100
     },
     "service": {
      "count": 8,
-     "avg": 96
+     "avg": 96,
+     "entity": 100
     }
    }
   },
@@ -52,22 +143,113 @@
    "breadcrumb": 20,
    "no_alt_pages": 0,
    "avg_words": 534,
+   "entity_avg": 97,
+   "entity_a": 21,
+   "entity_d_f": 0,
+   "entity_checks": {
+    "org": {
+     "pass": 21,
+     "of": 21
+    },
+    "page_type": {
+     "pass": 21,
+     "of": 21
+    },
+    "primary": {
+     "pass": 21,
+     "of": 21
+    },
+    "website": {
+     "pass": 1,
+     "of": 1
+    },
+    "breadcrumb": {
+     "pass": 20,
+     "of": 20
+    },
+    "person": {
+     "pass": 0,
+     "of": 8
+    },
+    "sameas": {
+     "pass": 21,
+     "of": 21
+    },
+    "provider": {
+     "pass": 21,
+     "of": 21
+    },
+    "area": {
+     "pass": 21,
+     "of": 21
+    },
+    "author": {
+     "pass": 0,
+     "of": 0
+    },
+    "contact": {
+     "pass": 21,
+     "of": 21
+    },
+    "about": {
+     "pass": 21,
+     "of": 21
+    },
+    "dates": {
+     "pass": 21,
+     "of": 21
+    },
+    "ids": {
+     "pass": 21,
+     "of": 21
+    },
+    "resolve": {
+     "pass": 21,
+     "of": 21
+    },
+    "clean": {
+     "pass": 21,
+     "of": 21
+    }
+   },
+   "schema_types": {
+    "WebPage": 21,
+    "ImageObject": 21,
+    "GeoCoordinates": 21,
+    "State": 21,
+    "Question": 21,
+    "Organization": 21,
+    "FAQPage": 21,
+    "PostalAddress": 21,
+    "Answer": 21,
+    "ContactPoint": 21,
+    "City": 21,
+    "LocalBusiness": 21,
+    "BreadcrumbList": 20,
+    "ListItem": 20,
+    "Service": 12,
+    "WebSite": 1
+   },
    "by_type": {
     "company": {
      "count": 8,
-     "avg": 85
+     "avg": 85,
+     "entity": 93
     },
     "city": {
      "count": 1,
-     "avg": 76
+     "avg": 76,
+     "entity": 100
     },
     "industry": {
      "count": 4,
-     "avg": 94
+     "avg": 94,
+     "entity": 100
     },
     "service": {
      "count": 8,
-     "avg": 96
+     "avg": 96,
+     "entity": 100
     }
    }
   },
@@ -87,22 +269,113 @@
    "breadcrumb": 20,
    "no_alt_pages": 0,
    "avg_words": 536,
+   "entity_avg": 97,
+   "entity_a": 21,
+   "entity_d_f": 0,
+   "entity_checks": {
+    "org": {
+     "pass": 21,
+     "of": 21
+    },
+    "page_type": {
+     "pass": 21,
+     "of": 21
+    },
+    "primary": {
+     "pass": 21,
+     "of": 21
+    },
+    "website": {
+     "pass": 1,
+     "of": 1
+    },
+    "breadcrumb": {
+     "pass": 20,
+     "of": 20
+    },
+    "person": {
+     "pass": 0,
+     "of": 8
+    },
+    "sameas": {
+     "pass": 21,
+     "of": 21
+    },
+    "provider": {
+     "pass": 21,
+     "of": 21
+    },
+    "area": {
+     "pass": 21,
+     "of": 21
+    },
+    "author": {
+     "pass": 0,
+     "of": 0
+    },
+    "contact": {
+     "pass": 21,
+     "of": 21
+    },
+    "about": {
+     "pass": 21,
+     "of": 21
+    },
+    "dates": {
+     "pass": 21,
+     "of": 21
+    },
+    "ids": {
+     "pass": 21,
+     "of": 21
+    },
+    "resolve": {
+     "pass": 21,
+     "of": 21
+    },
+    "clean": {
+     "pass": 21,
+     "of": 21
+    }
+   },
+   "schema_types": {
+    "WebPage": 21,
+    "ImageObject": 21,
+    "GeoCoordinates": 21,
+    "State": 21,
+    "Question": 21,
+    "Organization": 21,
+    "FAQPage": 21,
+    "PostalAddress": 21,
+    "Answer": 21,
+    "ContactPoint": 21,
+    "City": 21,
+    "LocalBusiness": 21,
+    "BreadcrumbList": 20,
+    "ListItem": 20,
+    "Service": 12,
+    "WebSite": 1
+   },
    "by_type": {
     "company": {
      "count": 8,
-     "avg": 85
+     "avg": 85,
+     "entity": 93
     },
     "city": {
      "count": 1,
-     "avg": 76
+     "avg": 76,
+     "entity": 100
     },
     "industry": {
      "count": 4,
-     "avg": 94
+     "avg": 94,
+     "entity": 100
     },
     "service": {
      "count": 8,
-     "avg": 96
+     "avg": 96,
+     "entity": 100
     }
    }
   }
